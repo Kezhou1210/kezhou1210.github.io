@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif; /* 类似学术主页的字体 */
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 页面容器，限制最大宽度，保持居中 */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 标题部分 */
+        header {
+            text-align: left; /* 或者 center */
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 400; /* 较细的字体，类似截图 */
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        h2.subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #666;
+            margin-top: 0;
+        }
+
+        /* 图片/视频展示区域 */
+        .teaser-image {
+            width: 100%;
+            background-color: #f9f9f9;
+            margin-bottom: 40px;
+            text-align: center;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .teaser-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+            padding: 10px;
+            font-style: italic;
+        }
+
+        /* 摘要正文 */
+        .abstract {
+            text-align: justify;
+            font-size: 1.05rem;
+            margin-bottom: 50px;
+        }
+
+        /* 底部按钮区域 */
+        .link-bar {
+            display: flex;
+            justify-content: center; /* 按钮居中 */
+            gap: 40px; /* 按钮之间的间距 */
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .link-item {
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: color 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .link-item:hover {
+            color: #0066cc; /* 悬停颜色 */
+        }
+        
+        /* 如果你想要看起来像按钮的样式，可以使用下面这个类 */
+        .btn {
+            background-color: #f4f4f4;
+            padding: 10px 25px;
+            border-radius: 30px; /* 圆角矩形 */
+            border: 1px solid #ddd;
+        }
+        
+        .btn:hover {
+            background-color: #e0e0e0;
+            border-color: #bbb;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Handows: An Interactive Window Management System for Mixed Reality</h1>
+            <h2 class="subtitle">IEEE ISMAR 2025 (Honorable Mention)</h2>
+        </header>
+
+        <div class="teaser-image">
+            <img src="images/Handows.png" alt="Project Teaser Image">
+        </div>
+
+        <div class="abstract">
+            <h3>Abstract</h3>
+            <p>
+                Window management in virtual reality (VR) remains a challenging task due to the spatial complexity and physical demands of current interaction methods. We introduce Handows, a palm-based interface that enables direct manipulation of spatial windows through familiar smartphone-inspired gestures on the user' s non-dominant hand. Combining ergonomic layout design with body-centric input and passive haptics, Handows supports four core operations: window selection, closure, positioning, and scaling. We evaluate Handows in a user study (N = 15) against two common VR techniques (virtual hand and controller) across four core window operations. Results show that Handows significantly reduces physical effort and head movement while improving task efficiency and interaction precision. A follow-up case study (N = 8) demonstrates Handows' usability in realistic multitasking scenarios, highlighting user-adapted workflows and spontaneous layout strategies. Our findings also suggest the potential of embedding mobile-inspired metaphors into proprioceptive body-centric interfaces to support low-effort and spatially coherent interaction in VR.
+            </p>
+            
+        </div>
+
+        <div class="link-bar">
+            <a href="pub/Handows.pdf" class="link-item btn">
+                <i class="fas fa-file-pdf"></i> <span>Full Paper</span>
+            </a>
+
+            <a href="videos/Handows.mp4" class="link-item btn">
+                <i class="fab fa-youtube"></i> <span>Demo Video</span>
+            </a>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

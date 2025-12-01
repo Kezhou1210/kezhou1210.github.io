@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif; /* 类似学术主页的字体 */
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 页面容器，限制最大宽度，保持居中 */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 标题部分 */
+        header {
+            text-align: left; /* 或者 center */
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 400; /* 较细的字体，类似截图 */
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        h2.subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #666;
+            margin-top: 0;
+        }
+
+        /* 图片/视频展示区域 */
+        .teaser-image {
+            width: 100%;
+            background-color: #f9f9f9;
+            margin-bottom: 40px;
+            text-align: center;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .teaser-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+            padding: 10px;
+            font-style: italic;
+        }
+
+        /* 摘要正文 */
+        .abstract {
+            text-align: justify;
+            font-size: 1.05rem;
+            margin-bottom: 50px;
+        }
+
+        /* 底部按钮区域 */
+        .link-bar {
+            display: flex;
+            justify-content: center; /* 按钮居中 */
+            gap: 40px; /* 按钮之间的间距 */
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .link-item {
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: color 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .link-item:hover {
+            color: #0066cc; /* 悬停颜色 */
+        }
+        
+        /* 如果你想要看起来像按钮的样式，可以使用下面这个类 */
+        .btn {
+            background-color: #f4f4f4;
+            padding: 10px 25px;
+            border-radius: 30px; /* 圆角矩形 */
+            border: 1px solid #ddd;
+        }
+        
+        .btn:hover {
+            background-color: #e0e0e0;
+            border-color: #bbb;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>GOATUI: Generating Opportunistic Adaptive Tangible User Interfaces through
+Function Alignment in Augmented Reality</h1>
+            <h2 class="subtitle">Under Review</h2>
+        </header>
+
+        <div class="teaser-image">
+            <img src="images/GOATUI.png" alt="Project Teaser Image">
+        </div>
+
+        <div class="abstract">
+            <h3>Abstract</h3>
+            <p>
+                Opportunistic Tangible User Interfaces leverage everyday objects to provide haptic feedback when users interact with spatial interfaces. Existing approaches of generating Opportunistic TUI rely on manual assignments or user-established adaptation rules and focus mainly on translating surface-based logic to the physical world, overlooking the rich interaction potentials of objects. Building on a formative study, we introduce GOATUI, an AR system that automatically generates TUIs by directly aligning the function of objects' embodied interactions with the goals of digital tasks. The system employs a VLM to perceive objects' interaction potentials within the environment and a vision-based pipeline to define each object's interaction realm. GOATUI leverages LLMs to consider the interactions' functional structure compatibility and functional purpose congruence with tasks to generate suitable TUIs. Our user study demonstrates that automatic TUI generation through function alignment reduces mental load and creates more expressive and immersive experiences, increasing users' willingness to engage with TUIs.
+            </p>
+            
+        </div>
+
+        <div class="link-bar">
+            <a href="pub/GOATUI.pdf" class="link-item btn">
+                <i class="fas fa-file-pdf"></i> <span>Full Paper</span>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1gZLFWC1JgwCB_dDT7vejd2Da0Mnj3IHa/view?usp=drive_link" class="link-item btn">
+                <i class="fab fa-youtube"></i> <span>Demo Video</span>
+            </a>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
